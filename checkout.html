@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" defer></script>
+
+    <style>
+    body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ 
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.checkout-form {
+    width: 500%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.checkout-form h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-transform: uppercase; /* Remove top margin to avoid extra spacing */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout-form .btn {
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    justify-content: center;
+    margin-left: 50px;
+
+}
+
+.checkout-form .btn:hover {
+    background-color: orangered;
+}
+
+
+</style>
+</head>
+
+<body>
+    
+
+    <div class="container">
+        <div class="box">
+            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+            <dotlottie-player src="https://lottie.host/8ca87beb-c54d-4c34-b2ca-b005f7539f4d/HnucyEpqPJ.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+        </div>
+        <div class="checkout-form">
+            <h2>Check out</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="pincode">Pincode:</label>
+                <input type="text" id="pincode" name="pincode" required>
+            </div>
+            <a href="order.html" class="btn" id="place-order-btn" > Place Order</a>
+            <!--<button type="submit" id="place-order-btn" class="btn">Place Order </button>-->
+        </div>
+        <div id="warning-msg" style="color: red;"></div>
+
+    </div>
+    
+    
+    <script>
+        // Function to display warning message next to input field
+        function displayWarning(fieldId, message) {
+            var inputField = document.getElementById(fieldId);
+            var warningMsg = document.createElement('div');
+            warningMsg.textContent = message;
+            warningMsg.classList.add('warning-msg');
+            warningMsg.style.color = 'red';
+            inputField.parentNode.appendChild(warningMsg);
+            // Listen for input events to remove the warning message when the user starts typing
+            inputField.addEventListener('input', function() {
+                warningMsg.remove();
+            });
+        }
+    
+        document.getElementById('place-order-btn').addEventListener('click', function(event) {
+            // Prevent default form submission behavior
+            event.preventDefault();
+    
+            // Retrieve values from input fields
+            var name = document.getElementById('name').value;
+            var phone = document.getElementById('phone').value;
+            var email = document.getElementById('email').value;
+            var address = document.getElementById('address').value;
+            var pincode = document.getElementById('pincode').value;
+    
+            // Remove any existing warning messages
+            var warningMsgs = document.querySelectorAll('.warning-msg');
+            warningMsgs.forEach(function(msg) {
+                msg.remove();
+            });
+    
+            // Check each required field
+            if (!name) {
+                displayWarning('name', 'Please enter your name.');
+            }
+            if (!phone) {
+                displayWarning('phone', 'Please enter your phone number.');
+            }
+            if (!email) {
+                displayWarning('email', 'Please enter your email address.');
+            }
+            if (!address) {
+                displayWarning('address', 'Please enter your address.');
+            }
+            if (!pincode) {
+                displayWarning('pincode', 'Please enter your pincode.');
+            }
+    
+            // Check if all required fields are filled
+            if (name && phone && email && address && pincode) {
+                // Proceed with form submission
+                window.location.href = 'order.html';
+            }
+        });
+    </script>
+    
+    
+    
+    
+    
+
+
+</body>
+</html>

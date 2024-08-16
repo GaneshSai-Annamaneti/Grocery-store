@@ -1,0 +1,111 @@
+/* CSS for Rices page */
+
+/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins',sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Heading styles */
+.heading {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 3.5rem;
+    color: black;
+}
+
+.heading span {
+    background: orangered;
+    color: #fff;
+    padding: 0.8rem 1.6rem;
+}
+
+/* Product slider styles */
+.product-slider {
+    padding: 1rem;
+}
+
+.product-slider .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-slider .swiper-slide {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the width of each product box for column layout */
+    margin: 10px; /* Adjust the spacing between each product box */
+}
+
+.product-slider .box {
+    display: grid;
+    place-items: center;
+    padding: 3rem 2rem;
+    background: white;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+.product-slider .box:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.product-slider .box img {
+    height: 20rem;
+    margin-bottom: 1rem;
+    mix-blend-mode: multiply;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.product-slider .box h3 {
+    font-size: 1.5rem;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.product-slider .box .price {
+    font-size: 2rem;
+    color: slategrey;
+    text-transform: capitalize;
+    margin-bottom: 0.2rem;
+}
+
+.product-slider .box .stars {
+    font-size: 1.7rem;
+    color: gold;
+    margin-top: 0.5rem;
+    text-transform: capitalize;
+}
+
+/* Button styles */
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid black;
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: orangered;
+    color: #fff;
+}
+
+

@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grocery Store</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header section starts-->
+
+    <header class="header">
+        <img src="pulses/grocery.png" alt="" class="logo"/>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#products">Products</a>
+            <a href="#categories">Categories</a>
+            <a href="#review">Review</a>
+        </nav>
+
+        
+        <div class="icons">
+            <div id="menu-btn"><i class="fas fa-bars"></i></div> 
+            <div id="search-btn"><i class="fas fa-search"></i></div>
+            <div id="cart-btn">
+                     <i class="fas fa-shopping-cart"></i>
+            <div class="totalQuantity">3</div>
+            </div> 
+            <div id="login-btn"><i class="fas fa-user"></i></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here..">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+       
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="pulses/bay-leaves.jpg" alt="">
+                <div class="content">
+                   <h3>Bay leaves</h3>
+                   <span class="price">$3.99/-</span>
+                   <span class="quantity">qty : 2</span> 
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="pulses/freedom oil.jpeg" alt="">
+                <div class="content">
+                    <h3>Freedom oil</h3>
+                    <span class="Price">$5.99/-</span>
+                    <span class="Quantity">qty : 1lit</span>
+                 </div>
+
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="pulses/yellow-moong-dal.webp" alt="">
+                <div class="content">
+                    <h3>Yellow moong dal</h3>
+                    <span class="Price">$3.99/-</span>
+                    <span class="Quantity"> qty : 500gm</span>
+                </div>
+            </div>
+            <div class="total">total : $13.97/-</div>
+            <a href="checkout.html" class="btn"> CHECK OUT</a>
+        </div> 
+
+        <form action="" class="login-form">
+            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+            <dotlottie-player src="pulses/Animation - 1713505479958.json" background="transparent" speed="0.5" style="width: 150px; height: 150px; display: flex ;" loop autoplay></dotlottie-player>
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <input type="submit" value="login now" class="btn"> 
+            <p>forget your password <a href="#">click here</a></p>
+            <p>Dont't have an account <a href="#" id="create-account-link">create now</a></p>
+        </form>
+
+        <!--<form action="" class="register-form" style="display: none;">
+            <h3>Create Account</h3>
+            <input type="email" placeholder="Your email" class="box">
+            <input type="password" placeholder="Your password" class="box">
+            <input type="password" placeholder="Confirm password" class="box">
+            <input type="submit" value="Create Account" class="btn"> 
+        </form>
+
+        <script>
+            // Toggle between login and registration forms when "Create now" link is clicked
+            document.getElementById('create-account-link').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent the default behavior of the link
+                
+                // Toggle the display of login and registration forms
+                document.querySelector('.login-form').style.display = 'none';
+                document.querySelector('.register-form').style.display = 'block';
+            });
+        </script> -->
+       
+
+    </header>
+    <!-- header section endss-->
+  
+   <!-- home section starts -->
+
+   <section class="home" id="home">
+
+    <div class="content">
+        <h3> <span>Best Quality</span> products to your home</h3>
+        <p>Discover premium groceries </br>curated for excellence , Elevate your culinary journey </br>with us</p>
+        <a href="#categories" class="btn" >Shop now</a>
+    </div>
+
+   </section>
+   <!-- home section ends -->
+
+   <!--Feature section starts-->
+
+
+   <section class="features" id="features">
+    <h1 class="heading">our <span>Features</span></h1>
+    <div class="box-container">
+        <div class="box"> 
+            <dotlottie-player src="pulses/Animation - 1713522949405.json" background="transparent" speed="0.5" style="width: 300px; height: 300px ; display: flex ;" loop autoplay></dotlottie-player>
+            <h3>Best Quality Products</h3>
+            <p>Where every item meets the mark of excellence, Your one-stop destination for quality and convenience.</p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+
+        <div class="box"> 
+            <dotlottie-player src="pulses/Animation - 1713250243796.json" background="transparent" speed="0.5" style="width: 300px; height: 300px; display: flex ;" loop autoplay></dotlottie-player>
+            <h3>Free delivery</h3>
+            <p>Enjoy the convenience of free delivery on all orders!</br> Elevate your shopping experience with doorstep convenience and no added cost.</p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+
+        <div class="box">
+            <dotlottie-player src="pulses/Animation - 1713523669287.json" background="transparent" speed="0.5" style="width: 300px; height: 300px; display: flex ;" loop autoplay></dotlottie-player>
+            <h3>Easy Payments</h3>
+            <p>Experience seamless transactions with our easy payment options. Shop hassle-free and enjoy convenient payment methods tailored to your needs.</p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+    </div>
+</section>
+
+
+
+   <!--Feature section ends-->
+
+   <!--products section starts-->
+
+   <section class="products" id="products">
+
+    <h1 class="heading">our <span>products</span></h1>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="pulses/white rice.webp" alt="" >
+                <h3>White Rice</h3>
+                <div class="price">$4.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/basmathi rice.webp" alt="" >
+                <h3>basmathi rice</h3>
+                <div class="price">$5.99/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/brown rice.jpg" alt="">
+                <h3>brown rice</h3>
+                <div class="price">$4.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+           
+         
+            <div class="swiper-slide box">
+                <img src="pulses/yellow-moong-dal.webp" alt="">
+                <h3>yellow moong dal</h3>
+                <div class="price">$4.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/Adzuki-Beans-Chori.webp" alt="">
+                <h3>adzuki beans</h3>
+                <div class="price">$5.99/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/Bengal-Gram-Chana-Dal.webp" alt="">
+                <h3>bengal gram</h3>
+                <div class="price">$4.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/Black-Chickpea-Kala-Chana.webp" alt="">
+                <h3>black chickpeas</h3>
+                <div class="price">$3.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/Black-eyed-Peas-Cowpea-LobiaChawli-Raungi.webp" alt="">
+                <h3>black eyed peas</h3>
+                <div class="price">$3.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+       
+            <div class="swiper-slide box">
+                <img src="pulses/Black-Matpe-Beans-Sabut-Urad.webp" alt="">
+                <h3>black matpe beans</h3>
+                <div class="price">$4.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/Dried-Green-Chickpeas-Hara-Chana.webp" alt="">
+                <h3>dried green chickpeas</h3>
+                <div class="price">$5.99/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/Dried-Green-Peas.webp" alt="">
+                <h3>dried green peas</h3>
+                <div class="price">$4.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            
+
+            <div class="swiper-slide box">
+                <img src="pulses/Split-Skinned-Black-Gram.webp" alt="">
+                <h3>split black gram</h3>
+                <div class="price">$4.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+           
+
+            <div class="swiper-slide box">
+                <img src="pulses/peanut oil.jpg" alt="">
+                <h3>peanut oil</h3>
+                <div class="price">$4.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/saffola oil.jpeg" alt="">
+                <h3>Saffola oil</h3>
+                <div class="price">$3.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a> 
+            </div>
+        </div>
+    </div>  
+    
+    
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="pulses/asafoetida.jpeg" alt="">
+                <h3>asafoetida</h3>
+                <div class="price">$4.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/bay-leaves.jpg" alt="">
+                <h3>bay leaves</h3>
+                <div class="price">$5.99/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/black pepper.jpeg" alt="">
+                <h3>black pepper</h3>
+                <div class="price">$4.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            
+
+            <div class="swiper-slide box">
+                <img src="pulses/cumin seeds.jpg" alt="">
+                <h3>cumin seeds</h3>
+                <div class="price">$4.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/curry-leaf.jpg" alt="">
+                <h3>curry leaves </h3>
+                <div class="price">$3.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/fenugreek-seeds.jpg" alt="">
+                <h3>fenugreek seeds</h3>
+                <div class="price">$3.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/garlic.jpg" alt="">
+                <h3>garlic</h3>
+                <div class="price">$3.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            
+
+            <div class="swiper-slide box">
+                <img src="pulses/mtr sambar powder.jpg" alt="">
+                <h3>mtr sambar powder</h3>
+                <div class="price">$3.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/mustard-seeds.jpg" alt="">
+                <h3>mustard seeds</h3>
+                <div class="price">$3.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/red chille.jpg" alt="">
+                <h3>red chille</h3>
+                <div class="price">$3.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/tamarind.jpg" alt="">
+                <h3>tamarind</h3>
+                <div class="price">$3.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/tuemeric powder.jpg" alt="">
+                <h3>tuemeric</h3>
+                <div class="price">$3.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>  
+        
+           
+   
+            <div class="swiper-slide box">
+                <img src="pulses/clinic plus shampoo.jpg" alt="">
+                <h3>Clinic plus shampoo</h3>
+                <div class="price">$4.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/closeup paste.jpg" alt="">
+                <h3>Closeup paste</h3>
+                <div class="price">$5.99/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/colgate brushes.jpg" alt="">
+                <h3>colgate brushes</h3>
+                <div class="price">$4.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/colgate paste.jpg" alt="">
+                <h3>colgate paste</h3>
+                <div class="price">$3.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/dabur almond oil.jpg" alt="">
+                <h3>dabur almond oil</h3>
+                <div class="price">$3.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+       
+            
+            <div class="swiper-slide box">
+                <img src="pulses/meera shampoo.jpg" alt="">
+                <h3>meera shampoo</h3>
+                <div class="price">$3.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/mysore sandal soap.jpg" alt="">
+                <h3>mysore sandal soap</h3>
+                <div class="price">$3.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/navratna oil.jpg" alt="">
+                <h3>navaratna oil</h3>
+                <div class="price">$3.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/nivea cream.jpg" alt="">
+                <h3>nivea cream</h3>
+                <div class="price">$3.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/oral B brushes.jpg" alt="">
+                <h3>oral-b brushes</h3>
+                <div class="price">$3.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/parachute aloe vera oil.jpg" alt="">
+                <h3>parachute aloe vera oil</h3>
+                <div class="price">$3.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            
+            <div class="swiper-slide box">
+                <img src="pulses/sunsilk shampoo.jpg" alt="">
+                <h3>sunsilk shampoo</h3>
+                <div class="price">$3.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pulses/whitetone powder.jpg" alt="">
+                <h3>whitetone powder</h3>
+                <div class="price">$3.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>  
+                <a href="#" class="btn">add to cart</a>      
+            </div>   
+        </div>
+    </div>
+
+   
+   </section>
+
+   <!--products section ends -->
+
+   <!--categories section starts -->
+
+   <section class="categories" id="categories">
+    <h1 class="heading">product<span>categories</span></h1>
+
+    <div class="box container">
+        <div class="box" >
+          <img src="pulses/rices.jpeg" alt="">
+          <h3>Rice's</h3>
+          <p>Quality rice is not an act, it's a habit</p> 
+          <a href="rices.html" class="btn">shop now</a>
+        </div>
+    
+
+        <div class="box" >
+            <img src="pulses/pulses logo.jpeg" alt="">
+            <h3>Pulses</h3>
+            <p>Quality from farm to table</p> 
+            <a href="pulses.html" class="btn">shop now</a>
+        </div>
+
+        <div class="box" >
+            <img src="pulses/oils.jpeg" alt="">
+            <h3>Oils</h3>
+            <p>The essence of purity and taste.</p> 
+            <a href="oils.html" class="btn">shop now</a>
+        </div>
+
+
+        <div class="box" >
+            <img src="pulses/herbs.jpg" alt="">
+            <h3>Spices</h3>
+            <p>Nature's flavor bombs.</p> 
+            <a href="spices.html" class="btn">shop now</a>
+        </div>
+
+        <div class="box" >
+            <img src="pulses/skincare logo.webp" alt="">
+            <h3>Skin Care</h3>
+            <p>Love your skin, nurture it daily.</p> 
+            <a href="skincare.html" class="btn">shop now</a>
+        </div>
+    </div>
+   </section>
+   <!--categories section ends -->
+
+   <!--review section starts-->
+
+   <section class="review" id="review">
+    <h1 class="heading"> customer's<span>review</span></h1>
+    <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <h2>CUSTOMER 1</h2>
+                    <p>Love this store! Great variety, convenient location.</p>  
+                    <h3>Ganesh sai</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <h2>CUSTOMER 2</h2>
+                    <p>Great selection, quick delivery, perfect condition!</p>  
+                    <h3>sri lakshmi</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <h2>CUSTOMER 3</h2>
+                    <p>Impressed by product quality and competitive prices!</p>  
+                    <h3>nikitha sai</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <h2>CUSTOMER 4</h2>
+                    <p>Top-notch selection, speedy delivery, flawless condition!</p>  
+                    <h3>jaya raju</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+            </div>
+        </div>
+    </div>
+   </section>
+
+
+
+   <!--review section ends-->
+
+   <!--footer section starts-->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <img src="pulses/grocery.png" alt="" class="logo"/>
+            <p> Grocery Store: Your one-stop shop for quality products and exceptional service.</p>
+            <div class="share">
+                <svg id= "emailIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16" >
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                </svg> 
+               
+                <svg id="instagramIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+              
+                <svg id="linkedlnIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                </svg>
+             
+                <svg id="whatsappIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                </svg>
+              
+
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="tel:+919347349036" class="links"><i class="fas fa-phone"></i>+91 9347349036</a>
+            <a href="tel:+919951880324" class="links"><i class="fas fa-phone"></i>+91 9951880324</a>
+            <a href="mailto:ganeshsaiannamaneti9@gmail.com" class="mail" ><i class="fas fa-envelope"></i>ganeshsaiannamaneti9@gmail.com</a>
+            <a href="https://www.google.com/maps?q=16.728979289761966,80.7515719952809" class="links" target="_blank"><i class="fas fa-map-marker-alt"></i>Edara, main road,ap - 521211</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home" class="links"><i class="fas fa-arrow-right"></i>home</a>
+            <a href="#features" class="links"><i class="fas fa-arrow-right"></i>features</a>
+            <a href="#products" class="links"><i class="fas fa-arrow-right"></i>products</a>
+            <a href="#categories" class="links"><i class="fas fa-arrow-right"></i>categories</a>
+            <a href="#review" class="links"><i class="fas fa-arrow-right"></i>reviews</a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>Stay in the loop with Annamaneti's Grocery Store! Subscribe to our newsletter for the latest deals, recipes, and updates.</p>
+            <div class="sub-contain">
+              <input type="email" placeholder="your email" class="email">
+              <input type="submit" value="subscribe" class="btn">
+            </div>
+
+            <div class="icons1">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+               </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
+                <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5z"/>
+               </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-paypal" viewBox="0 0 16 16">
+                <path d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.35.35 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91q.57-.403.993-1.005a4.94 4.94 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.7 2.7 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.7.7 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016q.326.186.548.438c.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.87.87 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.35.35 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32z"/>
+               </svg>
+            </div>   
+              
+        </div>
+    </div>
+
+    <div class="credit"> created by <span>ganesh sai annamaneti</span> | &copy; all rights reserved</div>
+</section> 
+
+   <!--footer section ends-->
+
+  
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
