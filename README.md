@@ -36,5 +36,5 @@ If you want to contribute to this project, please follow these guidelines:
 For any questions or feedback, you can reach me at:
 
 - **Email**: ganeshsaiannamaneti9@gmail.com
-- **GitHub**: GaneshSaiAnnamanetihttps://github.com/GaneshSaiAnnamaneti
+- **GitHub**: GaneshSaiAnnamanetihttps://github.com/GaneshSai-Annamaneti
  
